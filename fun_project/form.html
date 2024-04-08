@@ -1,0 +1,31 @@
+<!-- form.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun Activity Form</title>
+</head>
+<body>
+    <div id="form-card">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="activity">Choose an activity:</label>
+        <select id="activity">
+            <option value="soccer">Soccer</option>
+            <option value="board-games">Board Games</option>
+            <option value="picnic">Picnic</option>
+        </select>
+
+        <label for="timing">Choose a timing:</label>
+        <input type="time" id="timing" step="900"> <!-- 15-minute intervals -->
+        
+        <button onclick="confirmSelection()">Confirm</button>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
